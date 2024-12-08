@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "beeindustry",
+	"version": "${version}",
+	"name": "Bee Industry",
+	"description": "Industrial Bees to upgrade your bee hives.",
+	"authors": [
+		"ByFxbian"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/beeindustry/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"at.byfxbian.beeindustry.BeeIndustryMod"
+		],
+		"fabric-datagen": [
+			"at.byfxbian.beeindustry.BeeIndustryModDataGenerator"
+		],
+		"client": [
+			"at.byfxbian.beeindustry.BeeIndustryModClient"
+		]
+	},
+	"mixins": [
+		"beeindustry.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
