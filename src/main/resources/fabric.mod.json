@@ -16,13 +16,16 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"at.byfxbian.beeindustry.BeeIndustryMod"
+			"at.byfxbian.beeindustry.BeeIndustry"
 		],
 		"fabric-datagen": [
-			"at.byfxbian.beeindustry.BeeIndustryModDataGenerator"
+			"at.byfxbian.beeindustry.BeeIndustryDataGenerator"
+		],
+		"datagen":[
+			"at.byfxbian.beeindustry.BeeIndustryDataGenerator"
 		],
 		"client": [
-			"at.byfxbian.beeindustry.BeeIndustryModClient"
+			"at.byfxbian.beeindustry.BeeIndustryClient"
 		]
 	},
 	"mixins": [
