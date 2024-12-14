@@ -1,0 +1,17 @@
+{
+  "primaryColor": "#f2f24f",
+  "secondaryColor": "#d0581f",
+  "pollenColor": "#f2f24f",
+  "description": "Empty Description lol",
+  "beeTexture": "bee_industry:textures/entity/bee/example",
+  "createNectar": true,
+  "flowerBlockTag": "bee_industry:flowers/example",
+  "size": 1.0,
+  "translucent": false,
+  "fireproof": true,
+  "attributes": {
+    "productivity": 1,
+    "temper": 1,
+    "speed": 1
+  }
+}

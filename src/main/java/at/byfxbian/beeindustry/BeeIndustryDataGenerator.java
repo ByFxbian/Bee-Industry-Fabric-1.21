@@ -38,12 +38,6 @@ public class BeeIndustryDataGenerator implements DataGeneratorEntrypoint {
 
 		pack.addProvider((FabricDataOutput output, CompletableFuture< RegistryWrapper.WrapperLookup > registriesFuture) -> new BeeIndustryBeeDataProvider(output, registriesFuture, bees));
 
-		/*pack.addProvider(new FabricDataGenerator.Pack.Factory<DataProvider>() {
-			@Override
-			public DataProvider create(FabricDataOutput fabricDataOutput) {
-				return new BeeIndustryBeeDataProvider(fabricDataOutput, bees);
-			}
-		});*/
 	}
 
 	@Override
