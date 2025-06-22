@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "productivity": 5,
+    "speed": 3,
+    "temper": 2
+  },
+  "beeTexture": "beeindustry:textures/entity/bee/gold_bee.png",
+  "createNectar": true,
+  "description": "A shiny golden bee!",
+  "fireproof": false,
+  "flowerBlockTag": "beeindustry:flowers/golden_bee",
+  "name": "gold_bee",
+  "pollenColor": "#FFD700",
+  "primaryColor": "#FFD700",
+  "secondaryColor": "#FF1500",
+  "size": 1.2,
+  "translucent": false
+}
