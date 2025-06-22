@@ -1,5 +1,6 @@
 package at.byfxbian.beeindustry.datagen;
 
+import at.byfxbian.beeindustry.util.BeeIndustryVillagers;
 import net.minecraft.data.DataOutput;
 import net.minecraft.data.server.tag.TagProvider;
 import net.minecraft.registry.Registry;
@@ -19,6 +20,7 @@ public class BeeIndustryPoiTagProvider extends TagProvider<PointOfInterestType> 
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
-        this.getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE);
+        this.getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE)
+                .add(BeeIndustryVillagers.BEEKEEPER_POI_KEY);
     }
 }

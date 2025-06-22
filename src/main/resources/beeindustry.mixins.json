@@ -3,7 +3,8 @@
 	"package": "at.byfxbian.beeindustry.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"BeeEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

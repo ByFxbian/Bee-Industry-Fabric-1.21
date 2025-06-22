@@ -10,6 +10,7 @@ import net.minecraft.client.render.entity.model.BeeEntityModel;
 import net.minecraft.client.render.entity.model.EntityModelLayers;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 
 public class CustomBeeRenderer extends MobEntityRenderer<CustomBeeEntity, BeeEntityModel<CustomBeeEntity>> {
@@ -20,12 +21,15 @@ public class CustomBeeRenderer extends MobEntityRenderer<CustomBeeEntity, BeeEnt
 
     @Override
     public Identifier getTexture(CustomBeeEntity entity) {
-        if(entity.getCustomBee() != null) {
-            System.out.println("getTexture: CustomBee loaded with texture: " + entity.getCustomBee().value().beeTexture());
-            return Identifier.of(entity.getCustomBee().value().beeTexture());
+        RegistryEntry<CustomBee> customBeeEntry = entity.getCustomBee();
+
+        if(customBeeEntry != null) {
+            String texturePath = customBeeEntry.value().beeTexture();
+            //System.out.println("getTexture: CustomBee loaded with texture: " + texturePath);
+            return Identifier.of(texturePath);
         }
         String beeType = entity.getBeeType();
-        System.out.println("getTexture: CustomBee is null, trying BeeType: " + beeType);
+        //System.out.println("getTexture: CustomBee is null, trying BeeType: " + beeType);
 
         Registry<CustomBee> registry = entity.getWorld().getRegistryManager().get(BeeRegistries.BEE_REGISTRY_KEY);
         if(registry != null) {

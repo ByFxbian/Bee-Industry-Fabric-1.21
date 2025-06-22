@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "productivity": 3,
+    "speed": 2,
+    "temper": 5
+  },
+  "beeTexture": "beeindustry:textures/entity/bee/gold_bee.png",
+  "createNectar": true,
+  "description": "Iron Bee!",
+  "fireproof": false,
+  "flowerBlockTag": "beeindustry:flowers/iron_bee",
+  "name": "iron_bee",
+  "pollenColor": "#f2f24f",
+  "primaryColor": "#f2f24f",
+  "secondaryColor": "#d0581f",
+  "size": 1.5,
+  "translucent": false
+}
