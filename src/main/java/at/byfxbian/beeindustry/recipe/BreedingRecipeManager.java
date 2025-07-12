@@ -49,7 +49,7 @@ public class BreedingRecipeManager extends JsonDataLoader implements Identifiabl
     public static Optional<BreedingRecipe> getRecipeFor(Identifier parentA, Identifier parentB) {
         for (BreedingRecipe recipe : recipes.values()) {
             if((recipe.parentA().equals(parentA) && recipe.parentB().equals(parentB)) ||
-                    (recipe.parentA().equals(parentB) && recipe.parentB().equals(parentB))) {
+                    (recipe.parentA().equals(parentB) && recipe.parentB().equals(parentA))) {
                 return Optional.of(recipe);
             }
         }

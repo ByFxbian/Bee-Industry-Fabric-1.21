@@ -1,6 +1,7 @@
 package at.byfxbian.beeindustry.util;
 
 import at.byfxbian.beeindustry.BeeIndustry;
+import at.byfxbian.beeindustry.block.BeeIndustryBlocks;
 import com.google.common.collect.ImmutableSet;
 import net.fabricmc.fabric.api.object.builder.v1.villager.VillagerProfessionBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.world.poi.PointOfInterestHelper;
@@ -20,7 +21,7 @@ import net.minecraft.world.poi.PointOfInterestTypes;
 public class BeeIndustryVillagers {
 
     public static final RegistryKey<PointOfInterestType> BEEKEEPER_POI_KEY = registerPoiKey("beekeeper_poi");
-    public static final PointOfInterestType BEEKEEPER_POI = registerPOI("beekeeper_poi", Blocks.HONEY_BLOCK);
+    public static final PointOfInterestType BEEKEEPER_POI = registerPOI("beekeeper_poi", BeeIndustryBlocks.ADVANCED_BEEHIVE);
     public static final VillagerProfession BEEKEEPER = registerProfession("beekeeper", BEEKEEPER_POI_KEY);
 
     private static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type) {

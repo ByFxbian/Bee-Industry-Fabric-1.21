@@ -20,10 +20,12 @@ public record CustomBee(
         String beeTexture,
         boolean createNectar,
         String flowerBlockTag,
+        String productionItem,
         float size,
         boolean translucent,
         boolean fireproof,
-        Attributes attributes
+        Attributes attributes,
+        boolean invulnerable
 ) {
     public static final Codec<CustomBee> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.STRING.fieldOf("name").forGetter(CustomBee::name),
@@ -34,67 +36,33 @@ public record CustomBee(
             Codec.STRING.fieldOf("beeTexture").forGetter(CustomBee::beeTexture),
             Codec.BOOL.fieldOf("createNectar").forGetter(CustomBee::createNectar),
             Codec.STRING.fieldOf("flowerBlockTag").forGetter(CustomBee::flowerBlockTag),
+            Codec.STRING.fieldOf("productionItem").forGetter(CustomBee::productionItem),
             Codec.FLOAT.fieldOf("size").forGetter(CustomBee::size),
             Codec.BOOL.fieldOf("translucent").forGetter(CustomBee::translucent),
             Codec.BOOL.fieldOf("fireproof").forGetter(CustomBee::fireproof),
-            Attributes.CODEC.fieldOf("attributes").forGetter(CustomBee::attributes)
+            Attributes.CODEC.fieldOf("attributes").forGetter(CustomBee::attributes),
+            Codec.BOOL.fieldOf("invulnerable").forGetter(CustomBee::invulnerable)
     ).apply(instance, CustomBee::new));
-
-    /*public static final PacketCodec<RegistryByteBuf, CustomBee> PACKET_CODEC = PacketCodec.tuple(
-            PacketCodecs.STRING,
-            CustomBee::name,
-            PacketCodecs.STRING,
-            CustomBee::primaryColor,
-            PacketCodecs.STRING,
-            CustomBee::secondaryColor,
-            PacketCodecs.STRING,
-            CustomBee::pollenColor,
-            PacketCodecs.STRING,
-            CustomBee::description,
-            PacketCodecs.STRING,
-            CustomBee::beeTexture,
-            PacketCodecs.BOOL,
-            CustomBee::createNectar,
-            PacketCodecs.STRING,
-            CustomBee::flowerBlockTag,
-            PacketCodecs.FLOAT,
-            CustomBee::size,
-            PacketCodecs.BOOL,
-            CustomBee::translucent,
-            PacketCodecs.BOOL,
-            CustomBee::fireproof,
-            Attributes.PACKET_CODEC,
-            CustomBee::attributes,
-            CustomBee::new
-    );*/
 
 
     public static record Attributes(
             int productivity,
             int temper,
-            int speed
+            int speed,
+            double maxHealth,
+            double attackDamage
     ) {
         public static final Codec<Attributes> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.INT.fieldOf("productivity").forGetter(Attributes::productivity),
             Codec.INT.fieldOf("temper").forGetter(Attributes::temper),
-            Codec.INT.fieldOf("speed").forGetter(Attributes::speed)
+            Codec.INT.fieldOf("speed").forGetter(Attributes::speed),
+            Codec.DOUBLE.fieldOf("maxHealth").forGetter(Attributes::maxHealth),
+            Codec.DOUBLE.fieldOf("attackDamage").forGetter(Attributes::attackDamage)
         ).apply(instance, Attributes::new));
 
-        public static final PacketCodec<RegistryByteBuf, Attributes> PACKET_CODEC = PacketCodec.tuple(
-                PacketCodecs.INTEGER,
-                Attributes::productivity,
-                PacketCodecs.INTEGER,
-                Attributes::temper,
-                PacketCodecs.INTEGER,
-                Attributes::speed,
-                Attributes::new
-        );
     }
 
     public static final Codec<RegistryEntry<CustomBee>> ENTRY_CODEC = RegistryElementCodec.of(BeeRegistries.BEE_REGISTRY_KEY, CODEC);
-    /*public static final PacketCodec<RegistryByteBuf, RegistryEntry<CustomBee>> ENTRY_PACKET_CODEC = PacketCodecs.registryEntry(
-          BeeRegistries.BEE_REGISTRY_KEY, PACKET_CODEC
-    );*/
 
     public static CustomBee of(
             String name,
@@ -105,10 +73,12 @@ public record CustomBee(
             String beeTexture,
             boolean createNectar,
             String flowerBlockTag,
+            String productionItem,
             float size,
             boolean translucent,
             boolean fireproof,
-            Attributes attributes
+            Attributes attributes,
+            boolean invulnerable
     ) {
         return new CustomBee(
                 name,
@@ -119,10 +89,12 @@ public record CustomBee(
                 beeTexture,
                 createNectar,
                 flowerBlockTag,
+                productionItem,
                 size,
                 translucent,
                 fireproof,
-                attributes
+                attributes,
+                invulnerable
         );
     }
 }

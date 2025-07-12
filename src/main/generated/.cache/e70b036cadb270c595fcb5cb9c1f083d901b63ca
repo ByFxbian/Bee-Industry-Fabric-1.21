@@ -1,3 +1,5 @@
-// 1.21	2025-06-23T00:08:56.2395278	Bee Industry/Tags for minecraft:block
-b674e3545464901592a25e9338cd83e38451ac8f data\beeindustry\tags\block\flowers\golden_bee.json
+// 1.21	2025-07-10T00:24:03.1917857	Bee Industry/Tags for minecraft:block
+6f65945173b470070cc3ffbceeb8614d256b81f3 data\beeindustry\tags\block\flowers\gold_bee.json
+b5a289b8b3995051da520bf7ce877ab6e03753d8 data\beeindustry\tags\block\flowers\iron_bee.json
+26edf0609c63aff80f6ec7847ee2cfcf458fc309 data\beeindustry\tags\block\mineable_by_bee.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\mineable\pickaxe.json

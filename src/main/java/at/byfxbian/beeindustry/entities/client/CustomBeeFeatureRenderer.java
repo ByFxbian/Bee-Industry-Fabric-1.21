@@ -17,15 +17,6 @@ public class CustomBeeFeatureRenderer extends FeatureRenderer<CustomBeeEntity, B
         super(context);
     }
 
-    /*@Override
-    public void render(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, CustomBeeEntity entity, float limbAngle, float limbDistance, float tickDelta, float animationProgress, float headYaw, float headPitch) {
-        String beeType = entity.getBeeType();
-        Identifier texture = Identifier.of(BeeIndustry.MOD_ID, "textures/entity/bee/" + beeType + ".png");
-
-        VertexConsumer vertexConsumer = vertexConsumers.getBuffer(RenderLayer.getEntityTranslucent(texture));
-        this.getContextModel().render(matrices, vertexConsumer, light, OverlayTexture.DEFAULT_UV);
-    }*/
-
     @Override
     public void render(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, CustomBeeEntity entity, float limbAngle, float limbDistance, float tickDelta, float animationProgress, float headYaw, float headPitch) {
         if(entity.getCustomBee() != null) {

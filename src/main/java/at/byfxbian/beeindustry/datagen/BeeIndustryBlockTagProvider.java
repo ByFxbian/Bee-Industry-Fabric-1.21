@@ -20,9 +20,15 @@ public class BeeIndustryBlockTagProvider extends FabricTagProvider.BlockTagProvi
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE);
-        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, Identifier.of(BeeIndustry.MOD_ID, "flowers/golden_bee")))
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, Identifier.of(BeeIndustry.MOD_ID, "flowers/gold_bee")))
                 .add(Blocks.GOLD_BLOCK);
-        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, Identifier.of(BeeIndustry.MOD_ID, "flowers/golden_bee")))
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, Identifier.of(BeeIndustry.MOD_ID, "flowers/iron_bee")))
                 .add(Blocks.IRON_BLOCK);
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, Identifier.of(BeeIndustry.MOD_ID, "mineable_by_bee")))
+                .add(Blocks.STONE)
+                .add(Blocks.DIRT)
+                .add(Blocks.GRAVEL)
+                .add(Blocks.IRON_ORE)
+                .add(Blocks.COAL_ORE);
     }
 }

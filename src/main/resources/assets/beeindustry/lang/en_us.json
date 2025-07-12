@@ -1,6 +1,67 @@
 {
   "item.beeindustry.gold_bee_spawn_egg": "Gold Bee Spawn Egg",
   "item.beeindustry.iron_bee_spawn_egg": "Iron Bee Spawn Egg",
+  "item.beeindustry.farming_bee_spawn_egg": "Farming Bee Spawn Egg",
+  "item.beeindustry.mining_bee_spawn_egg": "Mining Bee Spawn Egg",
+  "item.beeindustry.fighting_bee_spawn_egg": "Fighting Bee Spawn Egg",
+  "item.beeindustry.dirt_bee_spawn_egg": "Dirt Bee Spawn Egg",
+  "item.beeindustry.stone_bee_spawn_egg": "Stone Bee Spawn Egg",
+  "item.beeindustry.sand_bee_spawn_egg": "Sand Bee Spawn Egg",
+  "item.beeindustry.gravel_bee_spawn_egg": "Gravel Bee Spawn Egg",
+  "item.beeindustry.copper_bee_spawn_egg": "Copper Bee Spawn Egg",
+  "item.beeindustry.coal_bee_spawn_egg": "Coal Bee Spawn Egg",
+  "item.beeindustry.mossy_bee_spawn_egg": "Mossy Bee Spawn Egg",
+  "item.beeindustry.diamond_bee_spawn_egg": "Diamond Bee Spawn Egg",
+  "item.beeindustry.emerald_bee_spawn_egg": "Emerald Bee Spawn Egg",
+  "item.beeindustry.rideable_bee_spawn_egg": "Rideable Bee Spawn Egg",
 
-  "itemgroup.beeindustry": "Bee Industry Items"
+  "item.beeindustry.beekeeper_helmet": "Beekeeper Helmet",
+  "item.beeindustry.beekeeper_chestplate": "Beekeeper Chestplate",
+  "item.beeindustry.beekeeper_leggings": "Beekeeper Leggings",
+  "item.beeindustry.beekeeper_boots": "Beekeeper Boots",
+
+  "item.beeindustry.bee_container": "Bee Container",
+  "item.beeindustry.efficiency_upgrade": "Efficiency Upgrade",
+  "item.beeindustry.quantity_upgrade": "Quantity Upgrade",
+  "item.beeindustry.range_upgrade": "Range Upgrade",
+
+  "item.beeindustry.bee_container.tooltip.contains": "Contains: %s",
+  "item.beeindustry.bee_container.tooltip.empty": "Empty",
+
+  "item.beeindustry.charm_template": "Charm Template",
+  "item.beeindustry.night_charm": "Night Charm",
+
+  "item.beeindustry.sweet_honey": "Sweet Honey",
+  "item.beeindustry.bee_smoker": "Bee Smoker",
+
+  "block.beeindustry.advanced_beehive": "Advanced Beehive",
+  "block.beeindustry.beepost": "Beepost",
+  "block.beeindustry.dirt_nest": "Dirt Nest",
+  "block.beeindustry.stone_nest": "Stone Nest",
+  "block.beeindustry.sand_nest": "Sand Nest",
+  "block.beeindustry.gravel_nest": "Gravel Nest",
+
+  "itemgroup.beeindustry": "Bee Industry Items",
+
+  "entity.minecraft.villager.beekeeper": "Beekeeper",
+
+  "entity.beeindustry.gold_bee": "Gold Bee",
+  "entity.beeindustry.iron_bee": "Iron Bee",
+  "entity.beeindustry.dirt_bee": "Dirt Bee",
+  "entity.beeindustry.sand_bee": "Sand Bee",
+  "entity.beeindustry.gravel_bee": "Gravel Bee",
+  "entity.beeindustry.mossy_bee": "Mossy Bee",
+  "entity.beeindustry.coal_bee": "Coal Bee",
+  "entity.beeindustry.copper_bee": "Copper Bee",
+  "entity.beeindustry.emerald_bee": "Emerald Bee",
+  "entity.beeindustry.diamond_bee": "Diamond Bee",
+  "entity.beeindustry.stone_bee": "Stone Bee",
+  "entity.beeindustry.mining_bee": "Mining Bee",
+  "entity.beeindustry.farming_bee": "Farming Bee",
+  "entity.beeindustry.fighting_bee": "Fighting Bee",
+  "entity.beeindustry.rideable_bee": "Rideable Bee",
+
+  "book.beeindustry.name": "Beekeeper's Guide",
+  "book.beeindustry.landing_text": "A comprehensive guide to the world of industrial beekeeping. This book will guide you through the basics and advanced mechanics of this mod.",
+  "tooltip.beeindustry.hold_shift_for_info": "Hold <Shift> for information"
 }

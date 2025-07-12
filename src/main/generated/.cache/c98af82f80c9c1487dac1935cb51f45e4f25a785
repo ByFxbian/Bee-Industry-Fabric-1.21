@@ -1,1 +1,9 @@
-// 1.21	2025-06-23T00:08:56.238525	Bee Industry/World Gen
+// 1.21	2025-07-10T00:24:03.190785	Bee Industry/World Gen
+c580cb8b2803c530393b6088b3a6f827714d3d6a data\beeindustry\worldgen\configured_feature\stone_nest.json
+77777cf9a7705056bb14ed7c68a7b57c1bee6363 data\beeindustry\worldgen\placed_feature\sand_nest_placed.json
+5a5afdd653a9a9b143d69b5c872c6f17797a1dd1 data\beeindustry\worldgen\placed_feature\gravel_nest_placed.json
+1bfe37754212976f631d771465297252a3b79615 data\beeindustry\worldgen\placed_feature\stone_nest_placed.json
+507f191cedc7c904aa21db940536a788ac2d67e3 data\beeindustry\worldgen\configured_feature\gravel_nest.json
+6d8c7e344abc01a43d941494862ef9c9286dde99 data\beeindustry\worldgen\placed_feature\dirt_nest_placed.json
+f83bccf665dfebaa34e60382707dc99cf3f65f20 data\beeindustry\worldgen\configured_feature\dirt_nest.json
+17eee836e96dc14dd7dbfb914a8b45087754b925 data\beeindustry\worldgen\configured_feature\sand_nest.json

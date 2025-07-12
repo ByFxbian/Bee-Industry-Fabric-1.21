@@ -1,6 +1,7 @@
 package at.byfxbian.beeindustry.datagen;
 
 import at.byfxbian.beeindustry.BeeIndustry;
+import at.byfxbian.beeindustry.block.BeeIndustryBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
@@ -32,6 +33,13 @@ public class BeeIndustryLootTableGenerator extends FabricBlockLootTableProvider 
 
     @Override
     public void generate() {
+        addDrop(BeeIndustryBlocks.ADVANCED_BEEHIVE);
+        addDrop(BeeIndustryBlocks.BEEPOST);
+        //addDrop(BeeIndustryBlocks.DIRT_NEST);
+        addDrop(BeeIndustryBlocks.DIRT_NEST, drops(Items.DIRT));
+        addDrop(BeeIndustryBlocks.STONE_NEST, drops(Items.COBBLESTONE));
+        addDrop(BeeIndustryBlocks.SAND_NEST, drops(Items.SAND));
+        addDrop(BeeIndustryBlocks.GRAVEL_NEST, drops(Items.GRAVEL));
 
     }
 

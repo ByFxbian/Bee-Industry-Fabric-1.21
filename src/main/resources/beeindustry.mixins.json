@@ -4,7 +4,13 @@
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin",
-		"BeeEntityMixin"
+		"BeeEntityMixin",
+		"PlayerEntityMixin",
+		"BeeEntityGoalMixin",
+		"MobEntityAccessor",
+		"BeeEnterHiveMixin",
+		"SpawnEggItemMixin",
+		"TemptGoalMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

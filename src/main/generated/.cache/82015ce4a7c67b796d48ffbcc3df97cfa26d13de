@@ -1,3 +1,9 @@
-// 1.21	2025-06-23T00:08:56.2375235	Bee Industry/Block Loot Tables
+// 1.21	2025-07-10T00:24:03.1892836	Bee Industry/Block Loot Tables
+b6dc615d23bf39f4c043f8e1cdb635c0be9cb708 data\beeindustry\loot_table\blocks\dirt_nest.json
+81c785927c47377518109cd8d3bed8cc20424313 data\beeindustry\loot_table\blocks\stone_nest.json
+7f82274e3983ccded6cffaeff96508a474e33bf0 data\beeindustry\loot_table\blocks\advanced_beehive.json
+b6f2e11bf0013c5992ee76be02c747094de3535f data\beeindustry\loot_table\blocks\gravel_nest.json
+7e530e35f8041fb294c05279921530c06bb14b4f data\beeindustry\loot_table\blocks\sand_nest.json
 d47bb2ba6541cb189bae984e56949353e1afc218 data\beeindustry\loot_table\entities\custom_bee\iron_bee.json
+3ff2ae8fc2dbe2937b99ea4b42237a8660af19ce data\beeindustry\loot_table\blocks\beepost.json
 653274cf35cee29dbbdc2205fb93570d44ded5c0 data\beeindustry\loot_table\entities\custom_bee\gold_bee.json

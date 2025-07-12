@@ -4,6 +4,8 @@ import at.byfxbian.beeindustry.datagen.*;
 import at.byfxbian.beeindustry.datagen.custom.BeeIndustryDynamicRegistryProvider;
 import at.byfxbian.beeindustry.entities.CustomBees;
 import at.byfxbian.beeindustry.util.BeeRegistries;
+import at.byfxbian.beeindustry.world.BeeIndustryConfiguredFeatures;
+import at.byfxbian.beeindustry.world.BeeIndustryPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -37,5 +39,7 @@ public class BeeIndustryDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(BeeRegistries.BEE_REGISTRY_KEY, CustomBees::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, BeeIndustryConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, BeeIndustryPlacedFeatures::bootstrap);
 	}
 }
